@@ -1,0 +1,29 @@
+$border-color-focus: mediumvioletred;
+$border-title-color-focus: mediumvioletred;
+
+#main {
+  layout: grid;
+  grid-size: 2;
+}
+
+Panel {
+  border: round $secondary;
+  border-title-color: $secondary;
+  margin-bottom: 1;
+  padding: 1;
+  width: 100%;
+  height: 100%;
+}
+
+Panel:focus {
+  border: round $border-color-focus;
+  border-title-color: $border-title-color-focus;
+}
+
+ConsoleWidget {
+  height: 20
+}
+
+#logpanel {
+  padding: 0;
+}
